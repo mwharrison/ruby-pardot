@@ -25,6 +25,10 @@ module Pardot
         def create list_id, prospect_id, params = {}
           post "/do/create/list_id/#{list_id}/prospect_id/#{prospect_id}", params
         end
+        
+        def delete list_id, prospect_id, params = {}
+          post "/do/delete/list_id/#{list_id}/prospect_id/#{prospect_id}", params
+        end
 
         protected
 
